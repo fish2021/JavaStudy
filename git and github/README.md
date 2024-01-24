@@ -79,3 +79,11 @@ $ git push origin <本地分支名>:<远程分支名>
 git push origin <本地分支名>
 ```
 
+
+
+删除远程连接
+
+```
+$ git remote rm origin
+```
+
