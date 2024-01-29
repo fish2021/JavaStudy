@@ -26,6 +26,7 @@ public class UserController {
     @RequestMapping("param")
     @ResponseBody
     public String save_param(String name , int age){
+        System.out.println(name+" "+age);
         return ""+name+"  "+age;
     }
 

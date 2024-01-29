@@ -1,19 +1,20 @@
 package com.it.config;
 
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
-import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
 
 import javax.servlet.Filter;
 
-public class ServletContainerInitConfig extends AbstractDispatcherServletInitializer {
+public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+    @Override
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class[0];
+    }
 
     @Override
-    protected WebApplicationContext createServletApplicationContext() {
-        AnnotationConfigWebApplicationContext annotationConfigWebApplicationContext = new AnnotationConfigWebApplicationContext();
-        annotationConfigWebApplicationContext.register(SpringMvcConfig.class);
-        return annotationConfigWebApplicationContext;
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class[]{SpringMvcConfig.class};
     }
 
     @Override
@@ -22,14 +23,8 @@ public class ServletContainerInitConfig extends AbstractDispatcherServletInitial
     }
 
     @Override
-    protected WebApplicationContext createRootApplicationContext() {
-        return null;
-    }
-
-    @Override
     protected Filter[] getServletFilters() {
-        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-        filter.setEncoding("UTF-8");
+        CharacterEncodingFilter filter = new CharacterEncodingFilter("UTF-8",false,false);
         return new Filter[]{filter};
     }
 }
