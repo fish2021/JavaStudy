@@ -38,7 +38,7 @@
 
   </dependencies>
   <build>
-    <finalName>springmvc_demo01</finalName>
+    <finalName>springmvc_demo02</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>

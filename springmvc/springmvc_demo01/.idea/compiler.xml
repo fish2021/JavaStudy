@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc_demo03_response" />
         <module name="springmvc_demo02" />
         <module name="springmvc_demo01" />
       </profile>
@@ -13,6 +14,8 @@
     <bytecodeTargetLevel>
       <module name="springmvc_demo01 (1)" target="1.8" />
       <module name="springmvc_demo01 (2)" target="1.8" />
+      <module name="springmvc_demo3_response" target="1.8" />
+      <module name="ssmh3167" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
