@@ -66,6 +66,31 @@
 					<li class="layui-nav-item layui-this">
 						<a href="javascript:;" data-url="${pageContext.request.contextPath}/resources/page/main.html"><i class="layui-icon" data-icon=""></i><cite>后台首页</cite></a>
 					</li>
+
+					<!-- 左侧导航栏开始 -->
+					<li class="layui-nav-item">
+						<a href="javascript:;" data-url="${pageContext.request.contextPath}/resources/page/main.html">
+							<i class="layui-icon" data-icon=""></i>
+								<cite>基础管理</cite>
+							<span class="layui-nav-more"></span>
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a data-url="../bus/toCustomerManager.action">
+									<i class="layui-icon" data-icon="">
+										<cite>客户管理</cite>
+									</i>
+								</a>
+							</dd>
+							<dd>
+								<a data-url="../bus/toCarManager.action">
+									<i class="layui-icon" data-icon="">
+										<cite>车辆管理</cite>
+									</i>
+								</a>
+							</dd>
+						</dl>
+					</li>
 				</ul>
 			</div>
 		</div>

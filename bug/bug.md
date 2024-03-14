@@ -53,3 +53,18 @@
 ![image-20240312123642888](D:\Ideaprojects\Java_graduate\bug\image\image-20240312123642888.png)
 
 #### 已解决 
+
+
+
+
+
+## 7.class path resource [jdbc.properties] cannot be opened because it does not exist
+
+#### 问题：在target目录中没有jdbc.properties所以直接将文件复制到target目录下。
+
+![image-20240313102107035](D:\Ideaprojects\Java_graduate\bug\image\image-20240313102107035.png)
+
+
+
+## 8在CarManager项目中，出现了各种报错关于Mapper...xml类型文件，所以建议删除。
+
