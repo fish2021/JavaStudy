@@ -11,7 +11,7 @@ public class Customer {
     private String address;
     private String phone;
     private String career;
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss" , timezone = "CMT+8")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss" , timezone = "GMT+8")
     private Date createtime;
 
     public String getIdentity() {

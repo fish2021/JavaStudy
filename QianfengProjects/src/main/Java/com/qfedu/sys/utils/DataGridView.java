@@ -1,10 +1,6 @@
 package com.qfedu.sys.utils;
 
-/**
- * @Author:千锋强哥
- * @organization: 千锋教研院
- * @Version: 1.0
- */
+
 
 /**
  * 在layui中我们表格展示数据,需要用到该对象
@@ -64,5 +60,15 @@ public class DataGridView {
 
     public void setData(Object data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "DataGridView{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", count=" + count +
+                ", data=" + data +
+                '}';
     }
 }
